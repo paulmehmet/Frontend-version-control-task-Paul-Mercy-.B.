@@ -1,35 +1,48 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Card Component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
+  <article class="card" aria-label="User profile card">
+    <div class="hero">
+      <div class="avatar" id="avatar">VC</div>
+    </div>
 
-  60K
-  Followers
+    <div class="content">
+      <div class="name" id="name">Victor Crest 
+        <small>26</small>
+      </div>
+      <div class="sub" id="location">London</div>
 
-  803K
-  Likes
+      <div class="stats">
+        <div class="stat">
+          <div class="num" id="followers">60K</div>
+          <div class="label">Followers</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="likes">803K</div>
+          <div class="label">Likes</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="photos">1.4K</div>
+          <div class="label">Photos</div>
+        </div>
+      </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="actions">
+        <button class="btn-follow" id="followBtn" aria-pressed="false">Follow</button>
+        <button class="btn-message" id="messageBtn">Message</button>
+      </div>
+    </div>
+
+  </article>
+
+  <script src="script.js"></script>
 </body>
 </html>
